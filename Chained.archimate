@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="(new model)" id="id-88f2ddc1fa3c4965a5242f5e8b3ea8b7" version="5.0.0">
+  <folder name="Strategy" id="id-d58766bad2c64a2092374af881f970a7" type="strategy"/>
+  <folder name="Business" id="id-a4b8b809ab58434193ec31c2a28355db" type="business">
+    <element xsi:type="archimate:BusinessProcess" name="Main Controller" id="id-78c21e475c9a44ac8a711c218e1a0d72">
+      <documentation>Orchestrates pipeline &#xD;
+selects architecture&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-213d81b756a94ebf8ebdda239f7a9af2">
+      <documentation>hjhjhhj&#xD;
+</documentation>
+    </element>
+  </folder>
+  <folder name="Application" id="id-ea1ac37b5b1a4bee9e1a7e59398261ec" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Main Controller" id="id-e5a4eee177234f6e8c7cd94859d1f5d2">
+      <documentation>-------------------------&#xD;
+orchestrates pipeline&#xD;
+selects architecture&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Config Module" id="id-71c414fdef054615bbb0cc879cfc0308"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Data Loader Module" id="id-d87fc85fbb564115acabae8b76bf86b1"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="id-b4b1d5628d1c48d09b286b3097a57e01"/>
+    <element xsi:type="archimate:DataObject" name="Data Object" id="id-5da2f23e83a745d3b711de43afcdc420"/>
+    <element xsi:type="archimate:DataObject" name="Data Object" id="id-004ac9893b7a4a20b608eedcdd47ba0f"/>
+    <element xsi:type="archimate:ApplicationComponent" name="RandomForest_Model_1" id="id-9fbe0bd324264ca7ab2dd2acc2f0e5f6"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Feature Augmentation (Level 2 Input)" id="id-8a36762ab0c04e34ab051dcaf4bac5d9"/>
+    <element xsi:type="archimate:ApplicationComponent" name="RandomForest_Model_2" id="id-58ef9d9204ae441f9e32966dfd47edf9"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Feature Augmentation (Level 3 Input)" id="id-ec13a0b2a85846aebce98f501cb81f5e"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="id-04b7a4f39e5948158241f28078210fc4"/>
+    <element xsi:type="archimate:ApplicationComponent" name="RandomForest_Model_3" id="id-176904383e47450d9258b3153bd84772"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Prediction Aggregator" id="id-305f89bb911a4b7981dfb0624b066779"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Evaluation Module" id="id-e9fd63789f574a8da7ec4e33e9f1d044"/>
+    <element xsi:type="archimate:ApplicationEvent" name="End" id="id-45eec09907864abeb13df548f581011f"/>
+    <element xsi:type="archimate:ApplicationComponent" name="BaseModel(Abstract Class)" id="id-3e3db1666b5b4791aea1d245ea33d8e6"/>
+    <element xsi:type="archimate:ApplicationComponent" name="End" id="id-0d6dd408c03740b7a306490441339317"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-134937b4edac484aa02228551db9f526" type="technology"/>
+  <folder name="Motivation" id="id-c08ed386465d407691a8acb23b5ea2be" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-2b7752ccc72b45fe90260bed4ca11385" type="implementation_migration"/>
+  <folder name="Other" id="id-8a9e6e25e7924cf5925e5a55642abd24" type="other"/>
+  <folder name="Relations" id="id-d40695cb4633498e9602adff968f37fe" type="relations">
+    <element xsi:type="archimate:TriggeringRelationship" id="id-273e5d9c41434e2381f5a39afad8c08f" source="id-e5a4eee177234f6e8c7cd94859d1f5d2" target="id-71c414fdef054615bbb0cc879cfc0308"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-7a042a41d5d545359162509c5cf438a8" source="id-71c414fdef054615bbb0cc879cfc0308" target="id-d87fc85fbb564115acabae8b76bf86b1"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-15f8c0d80cd341898e5a2be6aa5a1b73" source="id-d87fc85fbb564115acabae8b76bf86b1" target="id-b4b1d5628d1c48d09b286b3097a57e01"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-0e6b13f9363b489f98130e1a41431bd7" source="id-b4b1d5628d1c48d09b286b3097a57e01" target="id-004ac9893b7a4a20b608eedcdd47ba0f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4dffd1c76f3a4b06afabb486eab29afe" source="id-004ac9893b7a4a20b608eedcdd47ba0f" target="id-9fbe0bd324264ca7ab2dd2acc2f0e5f6"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-d147839c66a149c0a4267c10063d7dd4" source="id-9fbe0bd324264ca7ab2dd2acc2f0e5f6" target="id-8a36762ab0c04e34ab051dcaf4bac5d9"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-de31bfd5075246e6bd28ee0e40b8c0eb" source="id-8a36762ab0c04e34ab051dcaf4bac5d9" target="id-58ef9d9204ae441f9e32966dfd47edf9"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-edadf2d53b8e4b108c35056ac643849e" source="id-58ef9d9204ae441f9e32966dfd47edf9" target="id-ec13a0b2a85846aebce98f501cb81f5e"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-31070630eab3486e8503f405e1c0c116" source="id-ec13a0b2a85846aebce98f501cb81f5e" target="id-176904383e47450d9258b3153bd84772"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-a1593e5f3b0b44818c21462daad06cc6" source="id-176904383e47450d9258b3153bd84772" target="id-305f89bb911a4b7981dfb0624b066779"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-0fafcb0df9f349b5b8f83b03a7112007" source="id-305f89bb911a4b7981dfb0624b066779" target="id-e9fd63789f574a8da7ec4e33e9f1d044"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-95f2afc87b5f407c8557180d23cb18bb" source="id-e9fd63789f574a8da7ec4e33e9f1d044" target="id-45eec09907864abeb13df548f581011f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2050db92e19148c9b1851651376982c4" source="id-004ac9893b7a4a20b608eedcdd47ba0f" target="id-3e3db1666b5b4791aea1d245ea33d8e6"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-98efac0e97e3488db8500d4f3cd1e190" source="id-3e3db1666b5b4791aea1d245ea33d8e6" target="id-9fbe0bd324264ca7ab2dd2acc2f0e5f6"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-9b8ef373297943d49940c6ff5a8d228d" source="id-e9fd63789f574a8da7ec4e33e9f1d044" target="id-0d6dd408c03740b7a306490441339317"/>
+  </folder>
+  <folder name="Views" id="id-4bf5a48c13b945fda848178caf002400" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Chained" id="id-ef678144e8dd424eafaa8d61b71c4ab2">
+      <child xsi:type="archimate:DiagramObject" id="id-42084c5b4d7149169ad775a08a22326a" archimateElement="id-e5a4eee177234f6e8c7cd94859d1f5d2">
+        <bounds x="468" y="36" width="193" height="121"/>
+        <feature name="labelExpression" value="${name}&#xD;&#xA;--------------------&#xD;&#xA;&#xD;&#xA;orchestrates pipeline&#xD;&#xA;selects architecture&#xD;&#xA;"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-668d6184c32147bfbaea837a06b8c800" source="id-42084c5b4d7149169ad775a08a22326a" target="id-ac8bbc093a8b47e0a6a9627d283f2ffc" archimateRelationship="id-273e5d9c41434e2381f5a39afad8c08f">
+          <feature name="labelExpression" value="Control flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ac8bbc093a8b47e0a6a9627d283f2ffc" targetConnections="id-668d6184c32147bfbaea837a06b8c800" archimateElement="id-71c414fdef054615bbb0cc879cfc0308">
+        <bounds x="468" y="192" width="193" height="121"/>
+        <feature name="labelExpression" value="${name}&#xD;&#xA;-----------------------&#xD;&#xA;paths, params, seeds&#xD;&#xA;model settings"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-0ad79480156c4b85bb2565d7dc402039" source="id-ac8bbc093a8b47e0a6a9627d283f2ffc" target="id-4829f530162149e585a3f900b46fd158" archimateRelationship="id-7a042a41d5d545359162509c5cf438a8">
+          <feature name="labelExpression" value="Control flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4829f530162149e585a3f900b46fd158" targetConnections="id-0ad79480156c4b85bb2565d7dc402039" archimateElement="id-d87fc85fbb564115acabae8b76bf86b1">
+        <bounds x="468" y="348" width="193" height="121"/>
+        <feature name="labelExpression" value="Data Loader Module&#xD;&#xA;----------------------&#xD;&#xA;load_csv()&#xD;&#xA;drop(Type1)"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-38faad212deb4fcfb4ce4cd98fca1291" source="id-4829f530162149e585a3f900b46fd158" target="id-6c99af7847ef4be3890b2a0c5fa87110" archimateRelationship="id-15f8c0d80cd341898e5a2be6aa5a1b73">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6c99af7847ef4be3890b2a0c5fa87110" targetConnections="id-38faad212deb4fcfb4ce4cd98fca1291" archimateElement="id-b4b1d5628d1c48d09b286b3097a57e01">
+        <bounds x="468" y="504" width="193" height="169"/>
+        <feature name="labelExpression" value="Preprocessing Module&#xD;&#xA;----------------------&#xD;&#xA;clean_text()&#xD;&#xA;tokenize()&#xD;&#xA;remove_stopwords()&#xD;&#xA;&#xD;&#xA;TF-IDF Vectorizer → X"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-28365f91fd8f4ec08f4371890258d398" source="id-6c99af7847ef4be3890b2a0c5fa87110" target="id-b4862df8a9d34be2a4fd36c49c4966e1" archimateRelationship="id-0e6b13f9363b489f98130e1a41431bd7">
+          <feature name="labelExpression" value="Access (write)"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b4862df8a9d34be2a4fd36c49c4966e1" targetConnections="id-28365f91fd8f4ec08f4371890258d398" archimateElement="id-004ac9893b7a4a20b608eedcdd47ba0f">
+        <bounds x="468" y="708" width="193" height="121"/>
+        <feature name="labelExpression" value="Data Object&#xD;&#xA;-----------------&#xD;&#xA;X_train, X_test&#xD;&#xA;y2_train, y2_test&#xD;&#xA;y3_train, y3_test&#xD;&#xA;y4_train, y4_test"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1e253e7f14dd435c897ca54fb9ab085c" source="id-b4862df8a9d34be2a4fd36c49c4966e1" target="id-07587581e70248c38ad7efa250e080cb" archimateRelationship="id-2050db92e19148c9b1851651376982c4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e529fc1d97014d0b8428bb9262db07db" targetConnections="id-47780564ebef4f71b6e7329ab5376991" archimateElement="id-9fbe0bd324264ca7ab2dd2acc2f0e5f6">
+        <bounds x="462" y="1092" width="205" height="191"/>
+        <feature name="labelExpression" value="Level 1: Type 2 Classifier&#xD;&#xA;&#xD;&#xA;${name}&#xD;&#xA;-------------------------&#xD;&#xA;train(X_train, y2_train)&#xD;&#xA;predict(X_test) → preds_y2"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-fb2f7cc9f94d40db985c69337dbb0922" source="id-e529fc1d97014d0b8428bb9262db07db" target="id-b1d2d72dc255482e877c785902cebb57" archimateRelationship="id-d147839c66a149c0a4267c10063d7dd4">
+          <feature name="labelExpression" value="preds_y2"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b1d2d72dc255482e877c785902cebb57" targetConnections="id-fb2f7cc9f94d40db985c69337dbb0922" archimateElement="id-8a36762ab0c04e34ab051dcaf4bac5d9">
+        <bounds x="840" y="1092" width="229" height="191"/>
+        <feature name="labelExpression" value="${name}&#xD;&#xA;-------------------------&#xD;&#xA;X_train_2 = concat(X_train, y2_train)&#xD;&#xA;X_test_2 = concat(X_test, preds_y2)"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c31e0aec11584638876a45ae4cccac29" source="id-b1d2d72dc255482e877c785902cebb57" target="id-ceec95cd3446491a81febc4ffe75bac2" archimateRelationship="id-de31bfd5075246e6bd28ee0e40b8c0eb">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ceec95cd3446491a81febc4ffe75bac2" targetConnections="id-c31e0aec11584638876a45ae4cccac29" archimateElement="id-58ef9d9204ae441f9e32966dfd47edf9">
+        <bounds x="840" y="1356" width="229" height="193"/>
+        <feature name="labelExpression" value="Level 2: Type 3 Classifier&#xD;&#xA;&#xD;&#xA;${name}&#xD;&#xA;-------------------------&#xD;&#xA;train(X_train_2, y3_train)&#xD;&#xA;predict(X_test_2) → preds_y3"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-42116cca7ed94f709e8bc3ed7d567503" source="id-ceec95cd3446491a81febc4ffe75bac2" target="id-d19efc9da7c345c5ad2988cb2214d1ee" archimateRelationship="id-edadf2d53b8e4b108c35056ac643849e">
+          <feature name="labelExpression" value="preds_y3"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d19efc9da7c345c5ad2988cb2214d1ee" targetConnections="id-42116cca7ed94f709e8bc3ed7d567503" archimateElement="id-ec13a0b2a85846aebce98f501cb81f5e">
+        <bounds x="1188" y="1356" width="253" height="193"/>
+        <feature name="labelExpression" value="${name}&#xD;&#xA;-------------------------&#xD;&#xA;X_train_3 = concat(X_train_2, y3_train)&#xD;&#xA;X_test_3 = concat(X_test_2, preds_y3)"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-159efe4011d34dfa9f1fcbe9da0aa78f" source="id-d19efc9da7c345c5ad2988cb2214d1ee" target="id-3dde4eb6c5d74a4d91ec7b03dc8b7720" archimateRelationship="id-31070630eab3486e8503f405e1c0c116">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3dde4eb6c5d74a4d91ec7b03dc8b7720" targetConnections="id-159efe4011d34dfa9f1fcbe9da0aa78f" archimateElement="id-176904383e47450d9258b3153bd84772">
+        <bounds x="1188" y="1608" width="253" height="145"/>
+        <feature name="labelExpression" value="Level 3: Type 4 Classifier&#xD;&#xA;&#xD;&#xA;${name}&#xD;&#xA;-------------------------&#xD;&#xA;train(X_train_3, y4_train)&#xD;&#xA;predict(X_test_3) → preds_y4"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-08ab5bea15bf4824a83e84763037e007" source="id-3dde4eb6c5d74a4d91ec7b03dc8b7720" target="id-e42ff7e551674c7e9394c6ecefa264b8" archimateRelationship="id-a1593e5f3b0b44818c21462daad06cc6">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e42ff7e551674c7e9394c6ecefa264b8" targetConnections="id-08ab5bea15bf4824a83e84763037e007" archimateElement="id-305f89bb911a4b7981dfb0624b066779">
+        <bounds x="1188" y="1812" width="253" height="145"/>
+        <feature name="labelExpression" value="${name}&#xD;&#xA;-------------------------&#xD;&#xA;combine(preds_y2, preds_y3, preds_y4)"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-b183736f51314535bb1ebaecd0f80f3e" source="id-e42ff7e551674c7e9394c6ecefa264b8" target="id-fbf740486aba4299aae8435e1ec270a8" archimateRelationship="id-0fafcb0df9f349b5b8f83b03a7112007">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-fbf740486aba4299aae8435e1ec270a8" targetConnections="id-b183736f51314535bb1ebaecd0f80f3e" archimateElement="id-e9fd63789f574a8da7ec4e33e9f1d044">
+        <bounds x="1194" y="2016" width="241" height="157"/>
+        <feature name="labelExpression" value="${name}&#xD;&#xA;-------------------------&#xD;&#xA;correct_y2&#xD;&#xA;correct_y3 = correct_y2 ∧ (y3_pred == y3_true)&#xD;&#xA;correct_y4 = correct_y3 ∧ (y4_pred == y4_true)"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6331fef8d1574317beedc5ab58117c7d" source="id-fbf740486aba4299aae8435e1ec270a8" target="id-c0d92c68694e475db1143d9e1b2b8013" archimateRelationship="id-9b8ef373297943d49940c6ff5a8d228d">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-07587581e70248c38ad7efa250e080cb" targetConnections="id-1e253e7f14dd435c897ca54fb9ab085c" archimateElement="id-3e3db1666b5b4791aea1d245ea33d8e6">
+        <bounds x="462" y="852" width="205" height="205"/>
+        <feature name="labelExpression" value="BaseModel (Abstract Class)&#xD;&#xA;--------------&#xD;&#xA;train(data)&#xD;&#xA;predict(data)&#xD;&#xA;print_results()"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-47780564ebef4f71b6e7329ab5376991" source="id-07587581e70248c38ad7efa250e080cb" target="id-e529fc1d97014d0b8428bb9262db07db" archimateRelationship="id-98efac0e97e3488db8500d4f3cd1e190">
+          <feature name="labelExpression" value="data flow"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-c0d92c68694e475db1143d9e1b2b8013" targetConnections="id-6331fef8d1574317beedc5ab58117c7d" archimateElement="id-0d6dd408c03740b7a306490441339317">
+        <bounds x="1260" y="2220" width="120" height="55"/>
+      </child>
+      <documentation>Data Loader Module&#xD;
+-------------------------&#xD;
+orchestrates pipeline&#xD;
+selects architecture</documentation>
+    </element>
+  </folder>
+</archimate:model>
